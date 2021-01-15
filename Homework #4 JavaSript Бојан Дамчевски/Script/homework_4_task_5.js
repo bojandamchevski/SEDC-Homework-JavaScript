@@ -4,10 +4,10 @@ var arr = ["hello", 2, true, 4, 2, 8,,,, "bye", 12, 15, false];
 function maxMinSum(input) {
     let max = -Infinity;
     let min = +Infinity;
+    var sum = 0;
     for (let i = 0; i < arr.length; i++) {
         if (input[i] > max && input[i] !== "string" && input[i] !== true &&input[i] !== false && input[i] !== null) {
             max = input[i];
-            var sum = 0;
         }
         if (input[i] < min && input[i] !== "string" && input[i] !== true &&input[i] !== false && input[i] !== null) {
             min = input[i]
