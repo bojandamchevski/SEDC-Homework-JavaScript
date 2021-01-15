@@ -19,3 +19,70 @@ function maxMinSum(input) {
 }
 
 maxMinSum(arr);
+
+// ---------------MORE AND BETTER WAYS---------------------
+
+// let arrayNumbers = [3, 1, true, 2, 4, "Hello", 2, 5, false, 5, 3, "Text", 5, 7, 5, null, 8, 6, 99,];
+
+// function sumOfMinAndMaxNum1(input) {
+//     let sum = 0;
+//     let maxNum = -Infinity;
+//     let minNum = Infinity;
+//     for (let i = 0; i < input.length; i++) {
+//         if (typeof (input[i]) === 'number') {
+//             if (input[i] > maxNum) {
+//                 maxNum = input[i];
+//             }
+//             if (input[i] < minNum) {
+//                 minNum = input[i];
+//             }
+//         }
+//     }
+//     sum = maxNum + minNum;
+//     console.log(`The max in ${maxNum}, the min is ${minNum} and their sum is ${sum}`);
+// }
+
+// sumOfMinAndMaxNum1(arrayNumbers);
+
+// function sumOfMinAndMaxNum2(input) {
+//     let i = 0;
+//     let sum = 0;
+//     let maxNum = -Infinity;
+//     let minNum = Infinity;
+//     while (i < input.length) {
+//         if (typeof (input[i]) === 'number') {
+//             if (input[i] > maxNum) {
+//                 maxNum = input[i];
+//             }
+//             if (input[i] < minNum) {
+//                 minNum = input[i];
+//             }
+//         }
+//         i++;
+//     }
+//     sum = maxNum + minNum;
+//     console.log(`The max in ${maxNum}, the min is ${minNum} and their sum is ${sum}`);
+// }
+
+// sumOfMinAndMaxNum2(arrayNumbers);
+
+// function sumOfMinAndMaxNum3(input) {
+//     let sum = 0;
+//     let maxNum = -Infinity;
+//     let minNum = Infinity;
+//     for (let i of input) {
+//         if (typeof (i) === 'number') {
+//             if (i > maxNum) {
+//                 maxNum = i;
+//             }
+//             if (i < minNum) {
+//                 minNum = i;
+//             }
+//         }
+//         i++;
+//     }
+//     sum = maxNum + minNum;
+//     console.log(`The max in ${maxNum}, the min is ${minNum} and their sum is ${sum}`);
+// }
+
+// sumOfMinAndMaxNum3(arrayNumbers);
