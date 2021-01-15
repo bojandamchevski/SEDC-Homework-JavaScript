@@ -32,3 +32,55 @@ function validateNumber(input) {
 }
 
 validateNumber(numbers);
+
+// ---------------MORE AND BETTER WAYS---------------------
+
+// var numbers = [1, 2, 3, 4, 5,];
+
+// function sumOfNumbers(input) {
+//     let i = 0;
+//     let sum = 0;
+//     while (i < input.length) {
+//         sum += input[i];
+//         i++;
+//     }
+//     console.log(`The sum is ${sum}`);
+// }
+
+// sumOfNumbers(numbers);
+
+
+// function sumOfNumbers(input){
+//     let sum = 0;
+//     for(let i = 0; i < input.length; i++){
+//         sum += input[i]; 
+//     }
+//     console.log(`The sum of the five numbers is ${sum}`);
+// }
+
+// sumOfNumbers(numbers);
+
+
+// function sumOfNumbers(input){
+//     let sum = 0;
+//     for (let i of input){
+//         sum += i;
+//         i++;
+//     }
+//     console.log(`THE RESULT IS ${sum}`);
+// }
+
+// sumOfNumbers(numbers);
+
+// function validateNumber(input) {
+//     for (let i = 0; i < input.length; i++) {
+//         if (typeof (input[i]) === 'number') {
+//             console.log(`The number ${input[i]} is valid`);
+//         }
+//         else {
+//             console.log(`This ${input[i]} is not a number!`);
+//         }
+//     }
+// }
+
+// validateNumber(numbers);
