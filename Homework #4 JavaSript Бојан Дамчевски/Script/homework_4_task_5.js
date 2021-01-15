@@ -39,7 +39,7 @@ maxMinSum(arr);
 //         }
 //     }
 //     sum = maxNum + minNum;
-//     console.log(`The max in ${maxNum}, the min is ${minNum} and their sum is ${sum}`);
+//     console.log(`The max is ${maxNum}, the min is ${minNum} and their sum is ${sum}`);
 // }
 
 // sumOfMinAndMaxNum1(arrayNumbers);
@@ -61,7 +61,7 @@ maxMinSum(arr);
 //         i++;
 //     }
 //     sum = maxNum + minNum;
-//     console.log(`The max in ${maxNum}, the min is ${minNum} and their sum is ${sum}`);
+//     console.log(`The max is ${maxNum}, the min is ${minNum} and their sum is ${sum}`);
 // }
 
 // sumOfMinAndMaxNum2(arrayNumbers);
@@ -82,7 +82,7 @@ maxMinSum(arr);
 //         i++;
 //     }
 //     sum = maxNum + minNum;
-//     console.log(`The max in ${maxNum}, the min is ${minNum} and their sum is ${sum}`);
+//     console.log(`The max is ${maxNum}, the min is ${minNum} and their sum is ${sum}`);
 // }
 
 // sumOfMinAndMaxNum3(arrayNumbers);
