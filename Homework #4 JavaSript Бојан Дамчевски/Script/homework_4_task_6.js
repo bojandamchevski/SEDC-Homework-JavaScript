@@ -18,3 +18,26 @@ function fullName(fName,lName) {
 }
 
 fullName(firstName,secondName);
+
+
+// ---------------ANOTHER AND BETTER WAY---------------------
+
+
+// let firstNames = ["Chandler", "Joey", "Monica", "Ross", "Rachel", "Phoebe"];
+// let lastNames = ["Bing", "Tribbiani", "Geller", "Geller", "Green", "Buffay"];
+
+// function fullName(fName, lName) {
+//     let num = 1;
+//     let i = 0;
+//     let emptyString = "";
+//     let emptyArray = [];
+//     while (i < fName.length && i < lName.length) {
+//         emptyString = `${num}. ${fName[i]} ${lName[i]}`
+//         emptyArray.push(emptyString);
+//         num++;
+//         i++;
+//     }
+//     console.log(emptyArray);
+// }
+
+// fullName(firstNames,lastNames);
