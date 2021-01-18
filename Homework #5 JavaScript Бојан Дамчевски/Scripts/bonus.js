@@ -2,7 +2,7 @@ let nameRecipe = prompt("Name your recipe");
 let numberIngredients = parseInt(prompt("How many ingredients do we need ?"));
 console.log(numberIngredients);
 let headingElement = document.getElementById("maindiv");
-headingElement.innerHTML += `<h1>${nameRecipe}</h1> <h2>${nameRecipe}</h2> <h3>${nameRecipe}</h3> <h4>${nameRecipe}</h4> <h5>${nameRecipe}</h5> <h6>${nameRecipe}</h6>`
+headingElement.innerHTML += `<h1>${nameRecipe}</h1>`
 
 
 function recipe(number) {
