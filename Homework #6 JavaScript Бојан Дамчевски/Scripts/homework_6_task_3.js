@@ -15,7 +15,7 @@ function details() {
     let lName = lastName.value;
     let mail = email.value;
     let pass = password.value;
-    return printDetails(fName, lName, mail, pass);
+    printDetails(fName, lName, mail, pass);
 }
 
 function printDetails(fName, lName, mail, pass) {
