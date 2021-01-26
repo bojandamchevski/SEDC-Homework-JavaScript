@@ -17,7 +17,7 @@ function printStudents() {
     let studentA = new Student(inputName, inputLastName, inputAge);
     studentArray.push(studentA);
     for(let i = 0; i < 1; i++){
-        list.innerHTML += `<li>${inputName.value} ${inputLastName.value}</li>`;
+        list.innerHTML += `<li>${inputName.value} ${inputLastName.value} ${inputAge.value}</li>`;
     }
 }
 

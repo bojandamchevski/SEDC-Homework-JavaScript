@@ -43,19 +43,6 @@ function Book(inputName, inputAuthor, inputStatus) {
     this.title = inputName.value;
     this.author = inputAuthor.value;
     this.readingStatus = inputStatus.value;
-    this.status = function () {
-        // if (inputStatus.value === "yes") {
-        //     paragraph.innerHTML = "";
-        //     paragraph.innerHTML += `<b>Already read ${inputName.value} by ${inputAuthor.value}.</b>`;
-        //     paragraph.innerHTML += `<b>${inputStatus.value}</b>`
-        //     return true;
-        // }
-        // else {
-        //     paragraph.innerHTML = "";
-        //     paragraph.innerHTML += `<b>You still need to read ${inputName.value} by ${inputAuthor.value}.</b>`;
-        //     return false;
-        // }
-    }
 }
 
 function print() {
@@ -71,13 +58,11 @@ function print() {
     else {
         paragraph.innerHTML = "";
         paragraph.innerHTML += `<b>You still need to read ${inputName.value} by ${inputAuthor.value}.\n</b>`;
-        // paragraph.innerHTML += `<b>${inputStatus.value}</b>`
         return false;
     }
 }
 
 button.addEventListener("click", function () {
-    // print(inputName, inputAuthor, inputStatus);
     let result = print(inputName, inputAuthor, inputStatus);
     console.log(result);
 });
