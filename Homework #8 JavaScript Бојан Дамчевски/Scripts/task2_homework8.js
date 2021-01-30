@@ -1,8 +1,8 @@
 $(document).ready(function () {
     let mainBody = $("body");
-    mainBody.after("<input type = 'text' placeholder = 'type here' id = 'inputText'>");
+    mainBody.after("<input type = 'text' placeholder = 'type text here' id = 'inputText'>");
     let inputText = $("#inputText")
-    mainBody.after("<input type = 'color' id = 'inputColor'>");
+    mainBody.after("<input type = 'text' id = 'inputColor' placeholder = 'type color here'>");
     let inputColor = $("#inputColor");
     mainBody.after("<input type = 'button' value = 'Generate h1' id = 'button'>");
     let button = $("input").first();
