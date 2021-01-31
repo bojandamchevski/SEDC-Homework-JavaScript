@@ -37,22 +37,15 @@ function Animal(inputName, inputKind) {
     this.animalName = inputName.value;
     this.animalKind = inputKind.value;
     this.speak = function () {
-        // console.log(`Hey this is a ${inputName.value} and it's a ${inputKind.value}`);
-        // paragraph.innerHTML = "";
-        // paragraph.innerHTML += `<b>Hey this is a ${inputName.value} and it's name is ${inputKind.value}. ${inputKind.value} the ${inputName.value} says: Hello there!</b>`;
+        paragraph.innerHTML = "";
+        paragraph.innerHTML += `<b>Hey this is a ${inputKind.value} and it's name is ${inputName.value}. ${inputName.value} the ${inputKind.value} says: Hello there!</b>`;
     }
 }
 
-function print() {
-    let animalA = new Animal(inputName, inputKind);
-    paragraph.innerHTML = "";
-    paragraph.innerHTML += `<b>Hey this is a ${inputKind.value} and it's name is ${inputName.value}. ${inputName.value} the ${inputKind.value} says: Hello there!</b>`;
-    console.log(animalA);
-    console.log(typeof(animalA));
-}
-
 button.addEventListener("click", function () {
-    print(inputName, inputKind);
+    let animalA = new Animal(inputName, inputKind);
+    console.log(typeof(animalA));
+    animalA.speak(inputName, inputKind);
 });
 
 // THIS IS ANOTHER WAY, AND THE CORRECT WAY
