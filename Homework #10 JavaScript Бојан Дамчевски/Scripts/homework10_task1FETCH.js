@@ -1,5 +1,6 @@
 let button = document.getElementById("button");
 let paragraph = document.getElementById("para");
+let input = document.getElementById("input");
 
 function getTodo(number) {
     fetch(`https://jsonplaceholder.typicode.com/todos/${number}`)
@@ -14,11 +15,16 @@ function getTodo(number) {
                     }
                 });
         })
-        .catch (err =>{
+        .catch(err => {
             console.log(err);
         });
 }
 
 button.addEventListener("click", function () {
-    getTodo(parseInt(prompt("Enter number")));
+    if (!input.value || isNaN(input.value)) {
+        paragraph.innerText = (`Please enter a number !!!`)
+    }
+    else {
+        getTodo(input.value);
+    }
 });
